@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" name="myForm">
+        <input type="text " placeholder="Number 1" name="num1"><br><br>
+        <input type="text " placeholder="Number 2" name="num2"><br><br>
+        <p>1.Addition 2.Substraction 3.Multiplication 4.Division</p>
+
+        <input type="text" placeholder="Enter your choice" name="choice"><br><br>
+
+        <button type="button" onclick="test()">Submit</button>
+    </form>
+
+    <script>
+        function test(){
+            var n1 = Number(document.myForm.num1.value);
+            var n2 = Number(document.myForm.num2.value);
+            var ch = Number(document.myForm.choice.value);
+
+            switch(ch){
+                case 1:
+                    document.write(n1 + n2);
+                    break;
+
+                case 2:
+                    document.write(n1 - n2);
+                    break;
+
+                case 3:
+                    document.write(n1 * n2);
+                    break;
+
+                 case 4:
+                    document.write(n1 / n2);
+                    break;
+
+                default:
+                    alert("wrong Choice");
+            }
+           
+        }
+
+    </script>
+</body>
+</html>

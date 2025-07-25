@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num = 12321;
+        var temp = num;
+        var rev = 0;
+
+        while (num > 0) { //123
+            var digit = num % 10; //digit = 3
+            rev = rev*10+digit; //sum = 3
+            num = Math.floor(num / 10); //num = 12
+        }
+        if(temp == rev){
+                document.write("Palindrome")
+            }else{
+                document.write("not palindrome")
+            }
+        document.write(rev);
+    </script>
+</body>
+</html>
