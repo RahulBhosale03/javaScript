@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let correctUsername = "Rahul";
+        let correctPassword = "Rahul_03";
+
+        let username, password;
+
+        do {
+            username = prompt("Enter username:");
+            password = prompt("Enter password:");
+
+            if (username !== correctUsername || password !== correctPassword) {
+                alert("Invalid login. Please try again.");
+            }
+
+        } while (username !== correctUsername || password !== correctPassword);
+
+        alert("Login successful! Welcome, " + username + ".");
+
+    </script>
+</body>
+
+</html>
