@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="Enter your password" id="pass" onkeyup="check()"> <br><br>
+        <input type="text" placeholder="Enter your confirm password" id="cpass" onkeyup="check()"> <br><br>
+        <span id="error1" style="color: red"></span>
+    </form>
+
+
+    <script>
+        function check(){
+            var fn1 = document.getElementById("pass").value;
+            var fn2 = document.getElementById("cpass").value;
+
+            if(fn1 == fn2){
+                document.getElementById("error1").innerText = "";
+               
+            }else{
+                document.getElementById("error1").innerText = "Password Not matched";
+            }
+        }
+    </script>
+</body>
+</html>
